@@ -2,7 +2,7 @@
 <br>
 
 ## Introduction
-* Resume@builder is a web application where anyone can create resume with ease and choose from different available templates.
+* Resume builder is a web application where anyone can create resume with ease and choose from different available templates.
 * It has three tabs : 1) Resume Templates (Home Page) , 2)MY Resumes (Saved Resumes) 3) About us 
 * Set profile picture in the resume.
 * Before downloading we have a preview option to view your resume.
@@ -36,7 +36,7 @@ To set up the Resume Builder  on your local machine, follow these steps:
 1. Clone the repository from GitHub:
 
 Copy code
-#### git clone https://github.com/Sourabhrr33/Bookmymovie_Frontend.git
+#### git clone https://github.com/Sourabhrr33/AlmaBetter-Frontend-project.git
 
 
 2. Navigate to the project directory:
