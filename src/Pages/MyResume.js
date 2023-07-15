@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
@@ -49,9 +50,9 @@ function MyResume() {
   };
 
   return (
-    <div className='container'>
-      <div className='row mt-4'>
-        <div className='col text-center'>
+    <div className='container w-100 overflow-scroll'>
+      <div className='row mt-2 p-5'>
+        <div className='w-100 d-flex justify-content-center'>
           {selectedTemplate ? (
             <>
               <Link to='/detailsfillingpage/keyskills'>
@@ -69,10 +70,10 @@ function MyResume() {
           )}
         </div>
       </div>
-      <div className='row mt-4'>
-        <div className='col d-flex justify-content-center'>
-          <div className='resume-preview'>
-            <div id='divToPrint'>
+      <div className=' mt-2 p-5 w-100 ' style={{ minWidth:"1200px", overflow:'scroll'}}>
+        <div className=' w-100  d-flex justify-content-center '>
+          <div className=' w-100 resume-preview'>
+            <div id='divToPrint' className='w-100'>
               {selectedTemplate === '' ? (
                 <div className='text-center'>
                   <h1>Please select a resume template!</h1>

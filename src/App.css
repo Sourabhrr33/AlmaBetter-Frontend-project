@@ -99,4 +99,8 @@ justify-items: center;
 align-items: center;
 
 }
+.Navbar{
+display: flex;
+justify-content: flex-end;
+}
 
