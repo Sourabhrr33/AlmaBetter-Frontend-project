@@ -4,7 +4,8 @@ import {useSelector, useDispatch} from 'react-redux'
 import TextField from '../InputComponents/TextFeild'
 import { updateEducation ,addArrayElement,removeArrayElement ,updateErrorMessages} from '../../Redux/DataSlice'
 import BottomNavigation from './BottomNav'
-import { Margin } from '@mui/icons-material'
+import Button from '@mui/material/Button';
+
 
 // this component renders the Education page inside the details filling page.
 function Education(props) {
@@ -177,18 +178,18 @@ function Education(props) {
             )
         })}
         <div className='d-flex'>
-                <button 
+                <Button variant="contained"
                     className='btn btn-primary mt-3 me-5 mb-3 ml-1 p-2'
                     onClick={AddEducation}
                 >
                     Add new
-                </button>
-                <button 
+                </Button>
+                <Button variant="contained"
                     className='btn btn-primary mt-3 ms-5 mb-3 ml-1 p-2'
                     onClick={RemoveEducation}
                 >
                     Remove
-                </button>
+                </Button>
             </div>
             <BottomNavigation prevPagePath='/detailsfillingpage/workex' nextPagePath='/detailsfillingpage/keyskills' isFormValid={props.isFormValid}/>
     </div>

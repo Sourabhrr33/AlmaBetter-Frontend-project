@@ -4,6 +4,8 @@ import BottomNavigation from './BottomNav'
 import TextField from '../InputComponents/TextFeild'
 import TextArea from '../InputComponents/TextArea'
 import { updateWorkEx ,addArrayElement,removeArrayElement, updateErrorMessages } from '../../Redux/DataSlice'
+import Button from '@mui/material/Button';
+
 
 // this component renders the work experience page inside the details filling page.
 function WorkEx(props) {
@@ -171,18 +173,18 @@ function WorkEx(props) {
             )
         })}
         <div className='d-flex'>
-            <button 
+            <Button variant="contained"
                 className='btn btn-primary mt-3 me-5 mb-3 ml-1 p-2'
                 onClick={AddExperience}
             >
                 Add new
-            </button>
-            <button 
+            </Button>
+            <Button variant="contained"
                 className='btn btn-primary mt-3 ms-5 mb-3 ml-1 p-2'
                 onClick={RemoveExperience}
             >
                 Remove
-            </button>
+            </Button>
         </div>
         <BottomNavigation prevPagePath='/detailsfillingpage/personalinfo' nextPagePath='/detailsfillingpage/education' isFormValid={props.isFormValid} />
     </div>

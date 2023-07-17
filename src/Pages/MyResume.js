@@ -11,6 +11,7 @@ import html2canvas from 'html2canvas';
 import SuccessMessage from '../Components/Modal/Modal';
 import { clearSelectedTemplate } from '../Redux/DataSlice';
 
+
 function MyResume() {
 
       //this component shows the preview of the resume created by the user with the 'Save'and 'Back' button//

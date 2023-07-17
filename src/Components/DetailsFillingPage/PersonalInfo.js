@@ -142,19 +142,18 @@ function PersonalInfo(props) {
               </div>
           </div>
     
+    
           <div className="row font">
               <div className="col-lg-6 col-12 pt-5 px-4">
                 <div className='row '>
                   <div className='col-sm-2  col-12'>
-                    <label htmlFor="inputCity" className="col-sm-1 col-form-label">City*</label>
+                    <label htmlFor="inputContry" className="col-sm-1 col-form-label">Country</label>
                   </div>
                   <div className="col-sm-10 col-12">
-                    <TextField type="text"  elementId="City" 
-                          validation={
-                            { required:true,}
-                          } 
+                    <TextField type="text"  elementId="Country" 
+                        
                           value={personalHeads.City}
-                          onChange={(value,errorMessage)=>{ onChangeHandler('City',value,errorMessage) }}
+                          onChange={(value,errorMessage)=>{ onChangeHandler('Country',value,errorMessage) }}
                     />
                   </div>
                 </div>
@@ -185,6 +184,24 @@ function PersonalInfo(props) {
                           })
                         }
                     </select>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div className="row font">
+              <div className="col-lg-6 col-12 pt-5 px-4">
+                <div className='row '>
+                  <div className='col-sm-2  col-12'>
+                    <label htmlFor="inputCity" className="col-sm-1 col-form-label">City*</label>
+                  </div>
+                  <div className="col-sm-10 col-12">
+                    <TextField type="text"  elementId="City" 
+                          validation={
+                            { required:true,}
+                          } 
+                          value={personalHeads.City}
+                          onChange={(value,errorMessage)=>{ onChangeHandler('City',value,errorMessage) }}
+                    />
                   </div>
                 </div>
               </div>

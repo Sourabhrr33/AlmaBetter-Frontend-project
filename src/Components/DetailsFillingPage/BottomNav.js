@@ -2,6 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import { useDispatch} from 'react-redux'
 import { updateState } from '../../Redux/DataSlice'
+import Button from '@mui/material/Button';
 
 function BottomNavigation(props) {
   //this component is displayed under the component(personalInfo,workEx,education &keySkills) of detailsfillingpage as the bottom navBar having 'Next' and 'Previous' buttons//
@@ -13,7 +14,7 @@ function BottomNavigation(props) {
                             <div className="row row-cols-2">
                               <div className="col-sm-9 mt-4 d-flex justify-content-end">
                                 <Link to={props.prevPagePath}>
-                                  <button  className='btn btn-primary  p-1 px-2'
+                                  <Button variant="contained" 
                                     onClick={()=>{
                                       dispatch(updateState({
                                         key:'errorMessages',
@@ -22,13 +23,14 @@ function BottomNavigation(props) {
                                     }}
                                   >
                                     Previous
-                                  </button>
+                                  </Button>
                                 </Link>
                               </div>
                               <div className="col-sm-3 mt-4">
                                 {/* this link will be active only when the 'props.isFormValid' === true, and will direct the user to the nextPagePath otherwise it will remain inactive and show the alert, */}
                                 <Link to={props.isFormValid?props.nextPagePath:'#'}>
-                                  <button className='btn btn-primary p-1 px-2'
+                                  
+                                  <Button variant="contained" 
                                             onClick={()=>{
                                                 if(!props.isFormValid){
                                                     alert('Please fill all the necessary details correctly!')
@@ -50,7 +52,7 @@ function BottomNavigation(props) {
                                     {window.location.pathname === "/detailsfillingpage/keyskills" //this condition changes the name of the 'next' button as 'preview' when the user reaches 'keySkills' page.
                                     ?'Preview'
                                     :'Next'}
-                                  </button>
+                                  </Button>
                                 </Link>
                               </div>
                             </div>

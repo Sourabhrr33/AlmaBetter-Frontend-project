@@ -11,6 +11,7 @@ export const dataSlice = createSlice({
       Address1: '',
       Address2: '',
       City: '',
+      Country: '',
       State: '',
       Pin: '',
       Objective: '',

@@ -3,6 +3,8 @@ import {useSelector, useDispatch} from 'react-redux'
 import TextField from '../InputComponents/TextFeild'
 import { updateKeySkills ,addArrayElement,removeArrayElement } from '../../Redux/DataSlice'
 import BottomNavigation from './BottomNav'
+import Button from '@mui/material/Button';
+
 
 // this component renders the key skills page inside the details filling page.
 
@@ -50,18 +52,18 @@ function KeySkills(props) {
         })}
         <div className='row mt-3 '>
           <div className='col-sm-2 col-12 mt-3'>
-            <button className='btn btn-primary p-2'
+            <Button variant="contained" className='btn btn-primary p-2'
                       onClick={AddSkill}>
                   Add-Skill
 
-              </button>
+              </Button>
           </div>
           <div className='col-sm-2 col-12 mt-3'>
-            <button className='btn btn-primary p-2'
+            <Button variant="contained" className='btn btn-primary p-2'
                       onClick={RemoveSkill}>
                   Remove
 
-              </button>
+              </Button>
           </div>
         </div>
         <BottomNavigation prevPagePath='/detailsfillingpage/education' nextPagePath='/myresume' isFormValid={props.isFormValid}/>
