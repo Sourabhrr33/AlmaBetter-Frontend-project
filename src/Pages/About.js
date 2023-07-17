@@ -44,7 +44,11 @@ function AboutUs() {
                             textAlign: "justify",
                         }}
                     >
-                        ResumeBuilder is a web-based application that allows you to quickly and effortlessly create your resume. It offers a range of professionally designed templates to choose from. You also have the option to upload your profile picture to enhance the visual appeal of your resume. After filling in the required fields, you can preview your resume and download it to your computer. Additionally, the application enables you to make updates to your previously created resumes also you can delete resume.
+                        Resume Builder is a web-based application that allows you to quickly and effortlessly create your resume.
+                        It offers a range of professionally designed templates to choose from. You also have the option to upload your
+                        profile picture to enhance the visual appeal of your resume. After filling in the required fields, you can preview 
+                        your resume and download it to your computer. Additionally, the application enables you to make updates to your previously 
+                        created resumes also you can delete resume.
                     </Typography>
                     <Stack
                         sx={{
@@ -88,7 +92,7 @@ function AboutUs() {
                             />
                         </Link>
 
-                        <Link to="https://www.linkedin.com/in/kamran51/">
+                        <Link to="https://www.linkedin.com/in/sourabh-rathore-72b776216/">
                             <LinkedInIcon
                                 sx={{ fontSize: "40px", paddingLeft: "15px" }}
                                 color="primary"
@@ -106,7 +110,7 @@ function AboutUs() {
                                 color="info"
                             />
                         </Link>
-                        <Link to="https://github.com/mekams/">
+                        <Link to="https://github.com/Sourabhrr33">
                             <GitHub
                                 sx={{ fontSize: "40px", paddingLeft: "15px", color: "black" }}
                             />
