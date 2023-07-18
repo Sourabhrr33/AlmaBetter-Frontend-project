@@ -11,15 +11,15 @@ function Template1() {
             <div className="row  m-0 d-flex align-items-center" style={{height:"200px"}}>
                 <div className="col-2 text-center media" >
                     <img className="rounded align-self-center mx-auto " src={ dataStore.imageFile}alt='profile-pic'
-                         style={{maxHeight:'180px',minHeight:"120px", width:'100px', background:'grey' ,padding:0}}/>
+                         style={{maxHeight:'180px',minHeight:"120px", width:'100px', background:'grey',padding:0}}/>
                    
                 </div>
                 <div className="col-6    text-left font-weight-bold " style={{fontFamily:"Serif"}}>
-                    <div className=' d-flex justify-content-flex-start' style={{color:"#c98a55",fontSize:"55px"}}>{ dataStore.personalInfo.firstName +" "+  dataStore.personalInfo.lastName}</div>
-                    <h5 className=' d-flex justify-content-flex-start'>{dataStore.workEx[dataStore.workEx.length -1].title}</h5>
+                    <div className=' d-flex justify-content-start' style={{color:"#FF914D",fontSize:"55px"}}>{ dataStore.personalInfo.firstName +" "+  dataStore.personalInfo.lastName}</div>
+                    <h5 className=' d-flex justify-content-start'>{dataStore.workEx[dataStore.workEx.length -1].title}</h5>
                 </div>
                 <div className="col-4  ">
-                    <div className=' p-3' style={{fontSize:"18px",float:"left",color:"#c98a55",display:"inline-block"}}>
+                    <div className=' p-3' style={{fontSize:"18px",float:"left",display:"inline-block"}}>
                         <div >{dataStore.personalInfo.Email}</div>
                         <div>{dataStore.personalInfo.Mobile}</div>
                         <div>{dataStore.personalInfo.Address1 +", "+ dataStore.personalInfo.Address2
@@ -31,13 +31,12 @@ function Template1() {
                 </div>
             </div>
         </div>
-        <div className="d-flex justify-content-center pb-5">{dataStore.personalInfo.Objective}</div>
+        <div className="text-justify mx-4">{dataStore.personalInfo.Objective}</div>
+        <hr style={{height:"5px",backgroundColor:"#FF914D"}}/>
 
         <div className="container" style={{fontFamily:"Serif",}}>
             <div className="row">
-                <div className="col-3 text-left  " style={{color:"#c98a55",fontSize:"20px"}}> <h4> Professional Experience</h4></div>
-                <hr style={{height:"5px",backgroundColor:"#c98a55"}}/>
-
+                <div className="col-3 text-left  " style={{color:"#FF914D"}}> <h4> Professional Experience</h4></div>
                 <div className="col-9  text-left " style={{fontSize:"18px"}}>
                     {dataStore.workEx.map((item)=>{
                         return(
@@ -53,9 +52,8 @@ function Template1() {
                 
                 </div>
                 <div className="w-100 mt-4"> </div>
-                <div className="col-3 text-left" style={{color:"#c98a55"}}><h4>Education</h4></div>
-                <hr style={{height:"5px",backgroundColor:"#c98a55"}}/>
-
+                <hr style={{height:"5px",backgroundColor:"#FF914D"}}/>
+                <div className="col-3 text-left" style={{color:"#FF914D"}}><h4>Education</h4></div>
                 <div className="col-9 text-left" >
                     <div style={{fontSize:"18px"}}>
                         {dataStore.education.map((item)=>{
@@ -71,11 +69,10 @@ function Template1() {
                     </div>
                 </div>
                 <div className="w-100 mt-4"> </div>
+                <hr style={{height:"5px",backgroundColor:"#FF914D"}}/>
                 <div className="col-3 text-left " >
-                    <h4 style={{color:"#c98a55"}}>Key Skills</h4>
+                    <h4 style={{color:"#FF914D"}}>Key Skills</h4>
                 </div>
-                <hr style={{height:"5px",backgroundColor:"#c98a55"}}/>
-
                 <div className="col-9 text-left" style={{fontSize:"18px"}}>
                     
                         {dataStore.skills.map((skill)=>{

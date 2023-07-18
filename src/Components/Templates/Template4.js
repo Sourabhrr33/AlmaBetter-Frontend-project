@@ -2,6 +2,8 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 const shortid = require('shortid')
 
+// #c98a55
+
 function Template4() {
     const dataStore = useSelector(state => state.dataStore)
   return (
@@ -10,19 +12,19 @@ function Template4() {
             <div className='col col-3 d-flex align-items-center pt-5' style={{backgroundColor:"#7394BF", flexDirection:"column"}}>
                 <div className=" media me-5" >
                     <img className="rounded align-self-center  " src={ dataStore.imageFile} alt='profile-pic'
-                        style={{maxHeight:'180px',minHeight:"100px", width:'100px', background:'grey',padding:0}}/>
+                        style={{maxHeight:'180px',minHeight:"100px", width:'100px', margin:"0px -50px 0px 0px ",background:'grey',padding:0}}/>
                 </div>
                 <div className=" mt-3 font-weight-bold " style={{fontFamily:"Serif",}}>
                     <div className='' style={{color:"white",fontSize:"30px"}}>{ dataStore.personalInfo.firstName +" "+  dataStore.personalInfo.lastName}</div>
-                    <h5 className='pt-2 'style={{color:"#adccc7", fontSize:"20px"}}>{dataStore.workEx[dataStore.workEx.length -1].title}</h5>
+                    <h5 className='pt-2 'style={{color:"white", textAlign: "center" ,fontSize:"20px"}}>{dataStore.workEx[dataStore.workEx.length -1].title}</h5>
                 </div>
                 <div className=" ">
                     <div className='p-5 ms-4' style={{fontSize:"18px",display:"inline-block"}}>
-                        <div className="px-2 mb-2 " style={{backgroundColor:'white', color:"black"}}>Email:</div>
+                        <div className="px-2 mb-2 " style={{ background: "white", color: "black", borderRadius : "50%", textAlign: "center",lineHeight: "206%",margin: "0px -25px"}}>Email:</div>
                         <div style={{color:'#f7f7f7'}}>{dataStore.personalInfo.Email}</div>
-                        <div className=" px-2 mb-2 mt-2" style={{backgroundColor:'white', color:"black"}}>Contact:</div>
+                        <div className=" px-2 mb-2 mt-2" style={{background: "white", color: "black", borderRadius : "50%", textAlign: "center", lineHeight: "206%", margin: "0px -25px"}}>Contact:</div>
                         <div style={{color:'#f7f7f7'}}>{dataStore.personalInfo.Mobile}</div>
-                        <div className="px-2 mb-2 mt-2 " style={{backgroundColor:'white', color:"black"}}>Address:</div>
+                        <div className="px-2 mb-2 mt-2 " style={{background: "white", color: "black", borderRadius : "50%", textAlign: "center",lineHeight: "206%",margin: "0px -25px"}}>Address:</div>
                         <div style={{color:'#f7f7f7'}}>{dataStore.personalInfo.Address1 +", "+ dataStore.personalInfo.Address2
                                 +",  "+dataStore.personalInfo.City+", "+ dataStore.personalInfo.State +", "+ dataStore.personalInfo.Pin}
                         </div>
