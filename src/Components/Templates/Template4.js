@@ -26,7 +26,7 @@ function Template4() {
                         <div style={{color:'#f7f7f7'}}>{dataStore.personalInfo.Mobile}</div>
                         <div className="px-2 mb-2 mt-2 " style={{background: "white", color: "black", borderRadius : "50%", textAlign: "center",lineHeight: "206%",margin: "0px -25px"}}>Address:</div>
                         <div style={{color:'#f7f7f7'}}>{dataStore.personalInfo.Address1 +", "+ dataStore.personalInfo.Address2
-                                +",  "+dataStore.personalInfo.City+", "+ dataStore.personalInfo.State +", "+ dataStore.personalInfo.Pin}
+                                +",  "+dataStore.personalInfo.City+", "+ dataStore.personalInfo.State +", "+ dataStore.personalInfo.Country +", "+ dataStore.personalInfo.Pin}
                         </div>
                     </div>
                 </div>

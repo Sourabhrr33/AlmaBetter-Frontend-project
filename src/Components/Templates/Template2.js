@@ -5,7 +5,7 @@ const shortid = require('shortid')
 function Template2() {
     const dataStore = useSelector(state => state.dataStore)
   return (
-    <div className="w-100 " style={{ backgroundColor:"#f8f9fa"}}>
+    <div className="w-100 " style={{ backgroundColor:"#ffffff"}}>
         <div >
             <div className="row m-0 d-flex align-items-center" style={{height:"200px",backgroundColor:"#adb0de"}}>
                 <div className="col-2 text-center media" >
@@ -22,7 +22,7 @@ function Template2() {
                         <div >{dataStore.personalInfo.Email}</div>
                         <div>{dataStore.personalInfo.Mobile}</div>
                         <div>{dataStore.personalInfo.Address1 +", "+ dataStore.personalInfo.Address2
-                                +",  "+dataStore.personalInfo.City+", "+ dataStore.personalInfo.State +", "+ dataStore.personalInfo.Pin}
+                                +",  "+dataStore.personalInfo.City+", "+ dataStore.personalInfo.State +", "+ dataStore.personalInfo.Country +", "+ dataStore.personalInfo.Pin}
                         </div>
                         
                 

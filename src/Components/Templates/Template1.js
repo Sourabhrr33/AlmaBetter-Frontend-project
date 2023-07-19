@@ -23,7 +23,7 @@ function Template1() {
                         <div >{dataStore.personalInfo.Email}</div>
                         <div>{dataStore.personalInfo.Mobile}</div>
                         <div>{dataStore.personalInfo.Address1 +", "+ dataStore.personalInfo.Address2
-                                +",  "+dataStore.personalInfo.City+", "+ dataStore.personalInfo.State +", "+ dataStore.personalInfo.Pin}
+                                +",  "+dataStore.personalInfo.City+", "+ dataStore.personalInfo.State +", "+ dataStore.personalInfo.Country +", "+ dataStore.personalInfo.Pin}
                         </div>
                         
                 
