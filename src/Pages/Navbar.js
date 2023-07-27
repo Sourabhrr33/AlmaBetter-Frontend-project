@@ -18,11 +18,11 @@ function Navbar() {
     <div className='shadow p-2 mb-3 bg-white rounded'>
       <nav className='navbar navbar-expand-lg navbar-light p-0 m-0'>
         <div className='container-fluid'>
-          <div className='navbar-brand d-flex align-items-center' style={{ color: '#07588a', fontSize: '30px', fontWeight: '600' }}>
+          <div className='navbar-brand d-flex align-items-center' style={{ color: '#07588a', fontSize: '20px', fontWeight: '600' }}>
             <div className='me-3 mb-2'>
-            <div>
+            <div className='text'>
               <NavLink to='/'>
-                <img style={{ width: "8%" }} src={Logo} alt='Resume Builder' />
+                <img style={{ width: "5%", margin: "0px 8px" }} src={Logo} alt='Resume Builder' />
         
               </NavLink>
 
