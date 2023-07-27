@@ -20,11 +20,21 @@ function Navbar() {
         <div className='container-fluid'>
           <div className='navbar-brand d-flex align-items-center' style={{ color: '#07588a', fontSize: '30px', fontWeight: '600' }}>
             <div className='me-3 mb-2'>
+            <div>
               <NavLink to='/'>
-                <img className='w-50' src={Logo} alt='AlmaBtter' />
+                <img style={{ width: "8%" }} src={Logo} alt='Resume Builder' />
+        
               </NavLink>
+
+            
+                RESUME BUILDER
+             
             </div>
+            </div>
+            
+
           </div>
+          
           <button
             className='navbar-toggler'
             type='button'
